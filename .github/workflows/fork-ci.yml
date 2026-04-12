@@ -1,14 +1,12 @@
 name: Fork CI
 
 # ─────────────────────────────────────────────────────────────
-#  Runs on every push to a non-main branch in the participant's
-#  fork.  Gives early feedback BEFORE they open a PR.
+#  Runs on every push in the participant's fork (all branches).
+#  Gives early feedback BEFORE they open a PR.
 #  Uses the participant's own GitHub Actions minutes.
 # ─────────────────────────────────────────────────────────────
 on:
   push:
-    branches-ignore:
-      - main
 
 jobs:
   # ── 1. Tests ────────────────────────────────────────────────
